@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    eslint:
+      glob: "*.{js,ts}"
+      run: pnpm eslint --fix {staged_files}
+      staged_fixed: true
+    prettier:
+      glob: "*.{js,ts}"
+      run: pnpm prettier --write {staged_files}
+      staged_fixed: true

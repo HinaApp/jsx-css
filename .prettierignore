@@ -1,0 +1,7 @@
+# Ignore all files
+/**/*.* 
+dist
+# Don't ignore specific extensions
+!**/*.ts
+!**/*.tsx
+!**/*.config.*
